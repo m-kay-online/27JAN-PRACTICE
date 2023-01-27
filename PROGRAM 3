@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T maximum(T a,T b,T c){
+    T max;
+    max =a;
+    if(b>max)
+    max=b;
+    if(c>max)
+    max = c;
+    
+    return max;
+
+}
+
+int main(){
+    cout<<maximum(3,5,7)<<endl;
+    cout<<maximum(4.0,5.0,6.7)<<endl;
+    cout<<maximum('z','a','b');
+    
+    return 0;
+} 
